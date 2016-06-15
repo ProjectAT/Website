@@ -1,6 +1,9 @@
 <html>
 <head>
 	<title>Project@</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 	<link rel='stylesheet' type='text/css' href='./css/style.css'>
 </head>
 
@@ -9,12 +12,10 @@
 	<header id="site-header">
 		<div class="header--wrapper">
 			<div class="header--logo">
-				<a class="logo">Project@</a>
+				<a class="logo" href="">Project@</a>
 			</div>
-			<nav class="header--menu">
-				<a href="#">About</a>
-				<a href="#">Team</a>
-				<a href="#">Github</a>
+			<nav id="nav" class="header--menu">
+				<a href="#">About</a><a href="#">Team</a><a href="https://github.com/ProjectAT/uam" target="">Github</a>
 			</nav>
 		</div>
 	</header>
@@ -23,19 +24,148 @@
 		<div class="main--content">
 			<h1 class="title">Project@</h1>
 			<h3>A general purpose software package for use in assessing correctness of students' computer programs</h3>
-			<div class="cta"><a class="button"><span>GitHub</span></a></div>
+			<div class="cta"><a href="https://github.com/ProjectAT/uam" target="_blank" class="button">GitHub</a><a class="button" onclick="openSampleOutput()"> Sample Output</a></div>
 		</div>
-		<div class="container">
+		<a id="cta--scrolldown"><i class="material-icons floating">&#xE313;</i></a>
+		<!-- <div class="container">
 			<img id="computer-display" src="./img/Apple-Macbook-Gold.png">
-		</div>
+		</div> -->
 	</section>
-	<section class="easyUse--section">
+
+	<section class="why--section">
 		<div class="container">
-			<h2>Easy to use</h2>
-			<p></p>
+			<h2>Why Project@</h2>
+			<p>Assessing correctness of students' computer programs is a challenging task. Currently it requires the instructor or a skilled TA to develop a set of special-purpose programs to test students' solutions. This is a highly time-consuming task and the result is typically not easily re-usable. When grading, the TAs need to run these programs, analyze their output, and then examine the students' submissions. The output of these programs may be difficult to read for both students and the TAs, and the quality of feedback that the students receive suffers. 
+			</p>
+			<p>
+			A multi-purpose auto-testing software package will greatly speed up the grading process, thus freeing up valuable TA resources. The freed up TA hours can then be used in direct student-TA contact, thus improving the students' experience and quality of feedback. There are currently a number of exciting initiatives, such as conducting student interviews as part of the grading process, or involving TAs in in-class activities, which are unattainable to the instructors because 
+			of the scarcity of TA resources.</p>
 		</div>
 	</section>
-	<section class=""></section>
+	<section class="how--section">
+		<div class="container">
+			<h2>How it works.</h2>
+			<h4>Step 1: <span>Run Tests</span></h4>
+			<div class="grid--row">
+				<div class="col-1-3">
+					<p>test files</p>
+				</div>
+				<div class="col-1-3">
+					<p>students submissions</p>
+				</div>
+				<div class="col-1-3">
+					<p>results</p>
+				</div>
+			</div>
+			<div class="how-it-works--diagram grid--row">
+				<div class="col-1-3 fs">
+					<p>Test File 1</p>
+					<p>Test File 2</p>
+					<p>Test File 3</p>
+				</div>
+				<div class="col-1-3 fs">
+					<p>Student 1</p>
+					<p>Student 2</p>
+					<p>Student 3</p>
+					<p>.<br>.<br>.</p>
+				</div>
+				<div class="col-1-3 fs">
+					<p>testResult1.json</p>
+					<p>testResult2.json</p>
+					<p>testResult3.json</p>
+				</div>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h4>Step 2: <span>Aggregate results</span></h4>
+
+			<h4>Step 3: <span>Generate Reports</span></h4>
+			<div class="grid--row">
+				<div class="col-1-3">
+				</div>
+			</div>
+			<div class="grid--row">
+				<div class="col-1-3 card">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="col-1-3 card">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="col-1-3 card va">
+					<p class="text-center">Or Create Your Own</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="team--section">
+		<div class="container">
+			<h2>Our Team</h2>
+			<p>There are currently a number of exciting initiatives, such as conducting student interviews as part of the grading process, or involving TAs in in-class activities, which are unattainable to the instructors because 
+			of the scarcity of TA resources.</p>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="padd">
+				<div class="grid--row">
+					<div class="col-1-2">
+						<h5>With funding support by</h5>
+						<p>Lorem Ipsum set solor</p>
+						<p>Lorem Ipsum set solor</p>
+					</div>
+					<div class="col-1-2">
+						<h5>Capuses we're at</h5>
+						<p>University of Toronto, Scarborough Campus</p>
+						<p>University of Toronto, St. George</p>
+						<p>University of Toronto, Missisauga</p>
+					</div>
+				</div>
+			</div>
+			<div class="padd copy">
+				<h6>&copy; 2016 Anya Tafliovich</h6>
+			</div>
+		</div>
+	</footer>
+
+	<div class="overlay" id="overlay">
+		<div class="sample-output" id="sample-output"></div>
+	</div>
 
 	<script src='./js/script.js'></script>
 </body>
