@@ -81,6 +81,7 @@ p {
   flex-direction: row; }
 
 .col-1-3 {
+  position: relative;
   width: 32%; }
 
 .col-1-3:nth-child(2n) {
@@ -95,6 +96,13 @@ p {
 .col-1-2:nth-child(2) {
   width: 48%;
   margin-left: 4%; }
+
+.col-1-5 {
+  position: relative;
+  width: calc(1 / 5 * 100%); }
+
+.col-1-6 {
+  width: calc(1 / 6 * 100%); }
 
 .text-center {
   text-align: center; }
@@ -197,8 +205,10 @@ img#computer-display {
   position: absolute;
   top: calc((50% + 10em)); }
 
-.how-it-works--diagram {
-  border-top: 4px solid #42A5F5; }
+.how--section h5 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1em; }
 
 .how-it-works--diagram .fs {
   font-family: 'Roboto Mono';
@@ -209,6 +219,44 @@ img#computer-display {
 
 .team--section {
   padding: 3em 0; }
+
+.team--section .col-1-6 a {
+  display: block; }
+
+.team--section .col-1-6 {
+  text-align: center; }
+
+.profiles {
+  margin-top: 5em; }
+
+.tooltip--mask {
+  position: relative; }
+
+.tooltip--mask:hover .tooltip {
+  display: block; }
+
+.tooltip {
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+  border-radius: 20px;
+  width: 150px;
+  top: -3.5em;
+  left: calc(-75px + 50%);
+  position: absolute;
+  background-color: #141823; }
+
+.tooltip h6 {
+  color: #fff; }
+
+.team--section img.profile {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%; }
+
+.team--section img.profile:hover {
+  box-shadow: 0 2px 8px rgba(14, 21, 47, 0.25); }
 
 .overlay {
   transition: transform 0.3s ease;

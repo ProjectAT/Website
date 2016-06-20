@@ -35,10 +35,10 @@
 	<section class="why--section">
 		<div class="container">
 			<h2>Why Project@</h2>
-			<p>Assessing correctness of students' computer programs is a challenging task. Currently it requires the instructor or a skilled TA to develop a set of special-purpose programs to test students' solutions. This is a highly time-consuming task and the result is typically not easily re-usable. When grading, the TAs need to run these programs, analyze their output, and then examine the students' submissions. The output of these programs may be difficult to read for both students and the TAs, and the quality of feedback that the students receive suffers. 
+			<p>Assessing correctness of students' computer programs is a challenging task. Currently it requires the instructor or a skilled TA to develop a set of special-purpose programs to test students' solutions. This is a highly time-consuming task and the result is typically not easily re-usable. When grading, the TAs need to run these programs, analyze their output, and then examine the students' submissions. The output of these programs may be difficult to read for both students and the TAs, and the quality of feedback that the students receive suffers.
 			</p>
 			<p>
-			A multi-purpose auto-testing software package will greatly speed up the grading process, thus freeing up valuable TA resources. The freed up TA hours can then be used in direct student-TA contact, thus improving the students' experience and quality of feedback. There are currently a number of exciting initiatives, such as conducting student interviews as part of the grading process, or involving TAs in in-class activities, which are unattainable to the instructors because 
+			A multi-purpose auto-testing software package will greatly speed up the grading process, thus freeing up valuable TA resources. The freed up TA hours can then be used in direct student-TA contact, thus improving the students' experience and quality of feedback. There are currently a number of exciting initiatives, such as conducting student interviews as part of the grading process, or involving TAs in in-class activities, which are unattainable to the instructors because
 			of the scarcity of TA resources.</p>
 		</div>
 	</section>
@@ -47,36 +47,247 @@
 			<h2>How it works.</h2>
 			<h4>Step 1: <span>Run Tests</span></h4>
 			<div class="grid--row">
-				<div class="col-1-3">
-					<p>test files</p>
+				<div class="col-1-5">
+					<h5>test files</h5>
 				</div>
-				<div class="col-1-3">
-					<p>students submissions</p>
+				<div class="col-1-5"></div>
+				<div class="col-1-5">
+					<h5>students submissions</h5>
 				</div>
-				<div class="col-1-3">
-					<p>results</p>
+				<div class="col-1-5"></div>
+				<div class="col-1-5">
+					<h5>results</h5>
 				</div>
 			</div>
 			<div class="how-it-works--diagram grid--row">
-				<div class="col-1-3 fs">
-					<p>Test File 1</p>
-					<p>Test File 2</p>
-					<p>Test File 3</p>
+				<div class="col-1-5">
+					<div class="card">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:10px;left:-2.5%;width:105%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:20px;left:-5%;width:110%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
 				</div>
-				<div class="col-1-3 fs">
-					<p>Student 1</p>
-					<p>Student 2</p>
-					<p>Student 3</p>
-					<p>.<br>.<br>.</p>
+				<div class="col-1-5 va">
+					<h4><i class="material-icons">&#xE145;</i></h4>
 				</div>
-				<div class="col-1-3 fs">
-					<p>testResult1.json</p>
-					<p>testResult2.json</p>
-					<p>testResult3.json</p>
+				<div class="col-1-5">
+					<div class="card" style="margin-left:5%;width:90%;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:10px;left:2.5%;width:95%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:20px;left:0;width:100%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:30px;left:-2.5%;width:105%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:40px;left:-5%;width:110%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+				</div>
+				<div class="col-1-5 va">
+					<h4><i class="material-icons">&#xE154;</i></h4>
+				</div>
+				<div class="col-1-5">
+					<div class="card">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:10px;left:-2.5%;width:105%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:20px;left:-5%;width:110%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
 				</div>
 			</div>
+			<br>
+			<br>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<br>
+			<br>
+
 			<h4>Step 2: <span>Aggregate results</span></h4>
+			<div class="grid--row">
+				<div class="col-1-3">
+					<div class="card" style="width:100%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:10px;left:-2.5%;width:105%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="card" style="position:absolute;top:20px;left:-5%;width:110%;background-color:#fff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+				</div>
+				<div class="col-1-3 va">
+					<h4><i class="material-icons">&#xE154;</i></h4>
+				</div>
+				<div class="col-1-3 card">
+				</div>
+			</div>
+			<br>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<br>
+			<br>
 
 			<h4>Step 3: <span>Generate Reports</span></h4>
 			<div class="grid--row">
@@ -128,6 +339,8 @@
 					<p class="text-center">Or Create Your Own</p>
 				</div>
 			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 
 		</div>
 	</section>
@@ -135,8 +348,15 @@
 	<section class="team--section">
 		<div class="container">
 			<h2>Our Team</h2>
-			<p>There are currently a number of exciting initiatives, such as conducting student interviews as part of the grading process, or involving TAs in in-class activities, which are unattainable to the instructors because 
-			of the scarcity of TA resources.</p>
+			<div class="grid--row profiles">
+				<div class="col-1-6"><a class="tooltip--mask"><div class="tooltip"><h6>Test testy</h6></div><img class="profile" src="https://d13yacurqjgara.cloudfront.net/users/2973/screenshots/2777428/digitech-05.jpg"/></a></div>
+				<div class="col-1-6"><a class="tooltip--mask"><div class="tooltip"><h6>Test testy</h6></div><img class="profile" src="https://d13yacurqjgara.cloudfront.net/users/2973/screenshots/2777428/digitech-05.jpg"/></a></div>
+				<div class="col-1-6"><a class="tooltip--mask"><div class="tooltip"><h6>Test testy</h6></div><img class="profile" src="https://d13yacurqjgara.cloudfront.net/users/2973/screenshots/2777428/digitech-05.jpg"/></a></div>
+				<div class="col-1-6"><a class="tooltip--mask"><div class="tooltip"><h6>Test testy</h6></div><img class="profile" src="https://d13yacurqjgara.cloudfront.net/users/2973/screenshots/2777428/digitech-05.jpg"/></a></div>
+				<div class="col-1-6"><a class="tooltip--mask"><div class="tooltip"><h6>Test testy</h6></div><img class="profile" src="https://d13yacurqjgara.cloudfront.net/users/2973/screenshots/2777428/digitech-05.jpg"/></a></div>
+				<div class="col-1-6"><a class="tooltip--mask"><div class="tooltip"><h6>Test testy</h6></div><img class="profile" src="https://d13yacurqjgara.cloudfront.net/users/2973/screenshots/2777428/digitech-05.jpg"/></a></div>
+
+			</div>
 		</div>
 	</section>
 
