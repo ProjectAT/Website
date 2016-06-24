@@ -210,12 +210,18 @@ img#computer-display {
   text-transform: capitalize;
   font-size: 1em; }
 
+.how--section .card {
+  padding: 60% 0; }
+
 .how-it-works--diagram .fs {
   font-family: 'Roboto Mono';
   border-left: 4px solid #42A5F5; }
 
 .how-it-works--diagram .fs p {
   margin: 0.5em 0 0.5em 0.5em; }
+
+.how--section .grid--row.diagram {
+  margin-bottom: 2em; }
 
 .team--section {
   padding: 3em 0; }
