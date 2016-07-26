@@ -11,10 +11,15 @@
 
 html,
 body {
+	height: 100vh;
+	overflow: auto;;
 	margin:0;
 	padding:0;
 	color: $gray;
 	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+body._no-scroll {
+	overflow: hidden;
 }
 
 a {
@@ -282,13 +287,30 @@ img#computer-display {
 	position: fixed;
 	top: 0;
 	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
-
 .overlay.open {
 	transform: translate3d(0, 0, 0);
+}
+.overlay .card {
+	cursor: auto;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	width: calc(100% - 60px);
+	background-color: #fff;
+	padding: 40px 30px;
+}
+#overlay-2,
+#overlay-3,
+#overlay-4 {
+	cursor: zoom-out;
+	overflow: scroll;
+	transition: transform 0s ease;
+	// -webkit-backdrop-filter: blur(5px);
+	background-color: rgba(0, 0, 0, 0.8);
+}
+#output {
+	overflow: scroll;
+	width: 100%;
 }
 
 object {

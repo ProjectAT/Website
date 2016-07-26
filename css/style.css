@@ -18,14 +18,20 @@
   background-color: #42A5F5; }
 
 .card {
+  cursor: zoom-in;
   box-shadow: 0 2px 8px rgba(14, 21, 47, 0.25); }
 
 html,
 body {
+  height: 100vh;
+  overflow: auto;
   margin: 0;
   padding: 0;
   color: #9197A3;
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif; }
+
+body._no-scroll {
+  overflow: hidden; }
 
 a {
   cursor: pointer;
@@ -271,13 +277,30 @@ img#computer-display {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  left: 0; }
 
 .overlay.open {
   transform: translate3d(0, 0, 0); }
+
+.overlay .card {
+  cursor: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: calc(100% - 60px);
+  background-color: #fff;
+  padding: 40px 30px; }
+
+#overlay-2,
+#overlay-3,
+#overlay-4 {
+  cursor: zoom-out;
+  overflow: scroll;
+  transition: transform 0s ease;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#output {
+  overflow: scroll;
+  width: 100%; }
 
 object {
   width: 100%;

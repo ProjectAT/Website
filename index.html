@@ -135,22 +135,36 @@
 
 			<h4>Step 3: <span>Generate Reports</span></h4>
 			<div class="grid--row">
-				<div class="col-1-3"><h5>Arg</h5></div>
-				<div class="col-1-3"><h5>Templates</h5></div>
-				<div class="col-1-3"><h5>Formatted Reports</h5></div>
+				<div class="col-1-5"><h5>Aggregate</h5></div>
+				<div class="col-1-5"></div>
+				<div class="col-1-5"><h5>Templates</h5></div>
+				<div class="col-1-5"></div>
+				<div class="col-1-5"><h5>Formatted Reports</h5></div>
 			</div>
 			<div class="grid--row diagram">
-				<div class="col-1-3">
-					<div class="card" style="background-color:#fff;"></div>
+				<div class="col-1-5">
+					<div class="card"></div>
 				</div>
-				<div class="col-1-3">
-					<div class="card" style="background-color:#fff;"></div>
+				<div class="col-1-5 va">
+					<h4><i class="material-icons">&#xE145;</i></h4>
 				</div>
-				<div class="col-1-3">
-					<div class="card va" style="background-color:#fff;">
-					</div>
+				<div class="col-1-5">
+					<div class="card" style="position:absolute;top:10px;left:2.5%;width:95%;background-color:#fff;"></div>
+					<div class="card" style="position:absolute;top:20px;left:0;width:100%;background-color:#fff;"></div>
+					<div class="card" style="position:absolute;top:30px;left:-2.5%;width:105%;background-color:#fff;" onclick="openModal('overlay-3')"></div>
+				</div>
+				<div class="col-1-5 va">
+					<h4><i class="material-icons">&#xE154;</i></h4>
+				</div>
+				<div class="col-1-5">
+					<div class="card" style="margin-left:5%;width:90%;"></div>
+					<div class="card" style="position:absolute;top:10px;left:2.5%;width:95%;background-color:#fff;"></div>
+					<div class="card" style="position:absolute;top:20px;left:0;width:100%;background-color:#fff;"></div>
+					<div class="card" style="position:absolute;top:30px;left:-2.5%;width:105%;background-color:#fff;"></div>
+					<div class="card" style="position:absolute;top:40px;left:-5%;width:110%;background-color:#fff;" onclick="openModal('overlay-2')"></div>
 				</div>
 			</div>
+			<br>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
 				dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -220,10 +234,120 @@
 		</div>
 	</footer>
 
+
+	<!-- Modals with sample outputs -->
 	<div class="overlay" id="overlay">
 		<div class="sample-output" id="sample-output"></div>
 	</div>
 
+	<div class="overlay" id="overlay-2" onclick="closeModal('overlay-2')">
+		<div class="modal" id="output">
+			<div class="container">
+				<div class="card">
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+
+				</div>
+				<div class="card">
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+
+				</div>
+				<div class="card">
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+
+				</div>
+				<div class="card">
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+					xwxeewcew
+					<br>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay" id="overlay-3" onclick="closeModal('overlay-3')">
+		<div class="modal" id="output"></div>
+	</div>
+
+	<div class="overlay" id="overlay-4" onclick="closeModal('overlay-4')">
+		<div class="modal" id="output"></div>
+	</div>
+
+	<!-- JavaScript -->
 	<script src='./js/script.js'></script>
 </body>
 

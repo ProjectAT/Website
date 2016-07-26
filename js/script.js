@@ -33,3 +33,46 @@ function closeSampleOutput() {
 	var nav = document.getElementById('nav');
 	nav.innerHTML = navcontent;
 }
+
+function toggleBodyScroll() {
+	var el = document.getElementsByTagName("body")[0];
+	if (el.classList.length == 0) {
+		if (el.classList) {
+			el.classList.add('_no-scroll');
+		}
+		else {
+			el.classList += '_no-scroll'
+		}
+	}
+	else {
+		if (el.classList) {
+			el.classList.remove('_no-scroll');
+		}
+		else {
+			el.classList -= '_no-scroll'
+		}
+	}
+}
+
+// sample text output open/close
+function openModal(target) {
+	toggleBodyScroll();
+	var el = document.getElementById(target);
+	if (el.classList) {
+		el.classList.add('open');
+	}
+	else {
+		el.classList += 'open'
+	}
+}
+
+function closeModal(target) {
+	toggleBodyScroll();
+	var el = document.getElementById(target);
+	if (el.classList) {
+		el.classList.remove('open');
+	}
+	else {
+		el.classList -= 'open';
+	}
+}
